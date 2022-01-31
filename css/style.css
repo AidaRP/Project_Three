@@ -1,3 +1,16 @@
 body{
     background-color: aqua;
 }
+/* PANTALLAS */
+.screen2{
+    background-color:rgb(60, 255, 0);
+    width: 20vw;
+}
+.screen3{
+    background-color:rgb(225, 0, 255);
+    width: 20vw;
+}
+.screen4{
+    background-color:red;
+    width: 20vw;
+}
