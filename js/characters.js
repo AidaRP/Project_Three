@@ -1,11 +1,9 @@
 
 //-------------------------------------------- FUNCIÓN PARA SELECCIONAR CHARACTER ---------------------------------------------------------
 
-const selectionCharacter = () => {
-    Character(onclick, addEventListener, console.log('Acabas de seleccionar a' + Character));
-}
 
-console.log(selectionCharacter)
+
+
 //-------------------------------------------- APARTADO PARA LA CLASE Y SUS INSTANCIAS ---------------------------------------------------------
 
 class Character{
@@ -14,14 +12,14 @@ class Character{
         this.health = health,
         this.attack = attack
     }
-            
+        golpe(dmg){
+            this.health= this.health-dmg;
+        }    
 }
+
 
 
 // ---------------------------------------------------------------- INSTANCIAS ---------------------------------------------------------
 
-Character1 = new Character('Aída', 1000, 350);
-Character2 = new Character('Siete', 1000, 350);
-
-
-
+let Number1 = new Character('Aída', 1000, 350);
+let Number2 = new Character('Siete', 1000, 350);

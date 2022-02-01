@@ -19,8 +19,11 @@ const changeView = (vw_0) => {
 };
 
 
+const selectionCharacter = (Character) => {
+    (console.log('Acabas de seleccionar a ' + Character));
+}
 
+// .innerText() esto se utiliza si queremos renderizar el texto en la vista correspondiente.
 
-
+                                                                            // COMBATE
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
