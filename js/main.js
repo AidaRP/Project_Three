@@ -1,5 +1,7 @@
 
 //-------------------------------------------------------------------- APARTADO DE FUNCIONES ------------------------------------------------------------------------------- 
+
+// Función de cambio de Vista
 const changeView = (vw_0) => {
 
     let fasewant = "view" + vw_0;
@@ -18,7 +20,7 @@ const changeView = (vw_0) => {
     
 };
 
-
+// Función para seleccionar personaje
 const selectionCharacter = (Character) => {
     (console.log('Acabas de seleccionar a ' + Character));
 }
@@ -27,3 +29,4 @@ const selectionCharacter = (Character) => {
 
                                                                             // COMBATE
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
