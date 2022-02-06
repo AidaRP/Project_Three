@@ -39,4 +39,7 @@ const selectionCharacter = (Personaje) => {
   }
 };
 
+
+
+
 // .innerText() esto se utiliza si queremos renderizar el texto en la vista correspondiente.

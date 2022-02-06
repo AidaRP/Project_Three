@@ -20,12 +20,13 @@ let challenger1 = new Character("Zorra", 7000, 350, 50, 10);
 let challenger2 = new Character("Siete", 4650, 350, 25, 10);
 
 const dañarVida = () => {
-  console.log('funcion externa');
+  
  
   challenger1.health = parseInt(challenger1.health)  - (parseInt(challenger2.attack * Math.random(challenger2.lucky) ));
   challenger2.health = parseInt(challenger2.health)  - (parseInt(challenger1.attack * Math.random(challenger1.lucky) ));
   console.log(challenger1.health);
   console.log(challenger2.health);
+  //Condición que dictamina el ganador/perdedor
   if (challenger1.health <= 0) {
     challenger1.status = 'LOSER'
     challenger2.status = 'WINNER'
@@ -34,9 +35,12 @@ const dañarVida = () => {
     challenger2.status = 'LOSER'
     challenger1.status = 'WINNER'
   }
+  //Condición que hace cambiar de la vista 3 a la 4 cuando acaba el combate
+  if (challenger1.status == 'WINNER' || challenger2.status == 'WINNER') {
+    changeView(4);
+  }
 };
-console.log(challenger1);
-console.log(challenger2.lucky + 'Soy la suerte');
+
 
 //Guardo los personajes en un diccionario
 let SaveCharacters = {
@@ -44,6 +48,5 @@ let SaveCharacters = {
   2: challenger2,
 };
 
-console.log(SaveCharacters);
-console.log(challenger1.health);
+
 btnBattle.addEventListener("onclick",dañarVida());
