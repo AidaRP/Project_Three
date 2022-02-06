@@ -1,118 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Videojuego JS</title>
-</head>
-<body>
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
-                                                    <!-- VISTA 1 INICIO -->
-<section id="view1" class="screen1" >
-                                        <!-- BOTON 1 QUE HACE CAMBIAR LA PANTALLA -->
-    
-    <div class="btn_pos">
-        
-        <img src="img/start.jpg" alt="">
-        <button type="button" onClick ="changeView(2)" id="btnSeleccion" class="btn1">SOY VISTA 1</button>
+  </head>
+  <body>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- VISTA 1 INICIO -->
+    <section id="view1" class="screen1">
+      <!-- BOTON 1 QUE HACE CAMBIAR LA PANTALLA -->
 
-    </div>
+      <div class="btn_pos">
+        <img src="img/start.jpg" alt="" />
+        <button
+          type="button"
+          onClick="changeView(2)"
+          id="btnSeleccion"
+          class="btn1"
+        >
+          SOY VISTA 1
+        </button>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- VISTA 2 SELECCIÓN -->
+    <section id="view2" class="screen2" style="display: none">
+      <!-- BOTON 2 QUE HACE CAMBIAR LA PANTALLA -->
+      <button
+        type="button"
+        onClick="changeView(3)"
+        id="btnSeleccion"
+        class="btn btn-dark"
+      >
+        SOY VISTA 2
+      </button>
 
+      <div class="Div_Selection">
+        <div class="center">
+          <div class="Position_Selection">
+            Selecciona un Personaje:
 
-
-
-
-
-
-
-
-
-    
-    
-</section>
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
-                                                        <!-- VISTA 2 SELECCIÓN -->
-<section id="view2" class="screen2" style="display:none">
-                                            <!-- BOTON 2 QUE HACE CAMBIAR LA PANTALLA -->
-    <button type="button" onClick ="changeView(3)" id="btnSeleccion" class="btn btn-dark">SOY VISTA 2</button>
-
-<div class="Div_Selection">
-    
-    <div class="center">
-        <div class="Position_Selection">
-             Selecciona un Personaje: 
-        
             <div class="Personajes">
-                <div class="Aída" onclick="selectionCharacter('Aída')">Soy PJ 1</div> 
-                <div class="Siete"onclick="selectionCharacter('Siete')">Soy PJ 2</div>
+              <div
+                class="Personaje"
+                id="1"
+                onclick="selectionCharacter(1)"
+              >
+                Soy PJ 1
+              </div>
+              <div
+                class="Personaje"
+                id="2"
+                onclick="selectionCharacter(2)"
+              >
+                Soy PJ 2
+              </div>
             </div>
-
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- VISTA 3 BATALLA -->
+    <section id="view3" class="screen3" style="display: none">
+      <!-- BOTON 3 QUE HACE CAMBIAR LA PANTALLA -->
 
-</div> 
+      <button type="button" id="btnSeleccion" class="btn btn-dark">
+        SOY VISTA 3
+      </button>
 
+      <div id="battle">Inicia el combate</div>
+    </section>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- VISTA 4 FINAL-->
+    <section id="view4" class="screen4" style="display: none">
+      <!-- BOTON 4 QUE HACE CAMBIAR LA PANTALLA -->
+      <button
+        type="button"
+        onClick="changeView(1)"
+        id="btnSeleccion"
+        class="btn btn-dark"
+      >
+        SOY VISTA 4
+      </button>
+    </section>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-</section>
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
-                                                        <!-- VISTA 3 BATALLA -->
-<section id="view3" class="screen3" style="display:none">
-                                                <!-- BOTON 3 QUE HACE CAMBIAR LA PANTALLA -->
-
-    <button type="button" onClick ="changeView(4)" id="btnSeleccion" class="btn btn-dark">SOY VISTA 3</button>
-
-    <div onClick="golpe(dmg)" id="fight">Inicia el combate</div> 
-
-
-
-
-
-
-    
-    
-</section>
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
-                                                     <!-- VISTA 4 FINAL-->
-<section id="view4" class="screen4" style="display:none">
-                                                <!-- BOTON 4 QUE HACE CAMBIAR LA PANTALLA -->
-    <button type="button" onClick ="changeView(1)" id="btnSeleccion" class="btn btn-dark">SOY VISTA 4</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-</section> 
-<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
-
-<!-- ------------------------------------------------------ SCRIPTS  ---------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------ SCRIPTS  ---------------------------------------------------------------------------------------- -->
     <script src="js/characters.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
