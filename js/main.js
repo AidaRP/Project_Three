@@ -38,13 +38,5 @@ const selectionCharacter = (Personaje) => {
     }
   }
 };
-let round = 0;
 
-const startBattle = (boton) => {
-  if (btnSeleccion == true)
-    if (player1.health == 0 && player2.health == 0) {
-    } else {
-      console.log("No ha entrado");
-    }
-};
 // .innerText() esto se utiliza si queremos renderizar el texto en la vista correspondiente.

@@ -9,6 +9,7 @@ class Character {
     this.health = health;
     this.attack = parseInt(attack);
     this.speed = parseInt(speed);
+    this.status = null
   }
 
 }
@@ -25,6 +26,14 @@ const dañarVida = () => {
   challenger2.health = parseInt(challenger2.health)  - (parseInt(challenger1.attack * Math.random(challenger1.lucky) ));
   console.log(challenger1.health);
   console.log(challenger2.health);
+  if (challenger1.health <= 0) {
+    challenger1.status = 'LOSER'
+    challenger2.status = 'WINNER'
+  }
+  if (challenger2.health <= 0) {
+    challenger2.status = 'LOSER'
+    challenger1.status = 'WINNER'
+  }
 };
 console.log(challenger1);
 console.log(challenger2.lucky + 'Soy la suerte');
