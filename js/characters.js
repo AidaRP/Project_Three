@@ -19,11 +19,11 @@ class Character {
 let challenger1 = new Character("Zorra", 7000, 350, 50, 10);
 let challenger2 = new Character("Siete", 4650, 3350, 25, 10);
 let challenger3 = new Character("S", 4650, 3350, 25, 10);
-let challenger4 = new Character("A", 4650, 3350, 25, 10);
-let challenger5 = new Character("E", 4650, 3350, 25, 10);
-let challenger6 = new Character("F", 4650, 3350, 25, 10);
-let challenger7 = new Character("I", 4650, 3350, 25, 10);
-let challenger8 = new Character("L", 4650, 3350, 25, 10);
+let challenger4 = new Character("A", 5550, 350, 25, 10);
+let challenger5 = new Character("E", 8750, 9350, 25, 10);
+let challenger6 = new Character("F", 9950, 7350, 25, 10);
+let challenger7 = new Character("I", 3350, 4350, 25, 10);
+let challenger8 = new Character("L", 7750, 66350, 25, 10);
 
 const dañarVida = () => {
   

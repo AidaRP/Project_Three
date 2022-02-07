@@ -39,9 +39,9 @@ const selectionCharacter = (Personaje) => {
   }
 };
 
-const final = () => {
-  innerText = `El combate ha finalizado con ${challenger().name} como WINNER!`;
-}
+// const final = () => {
+//   innerText = `El combate ha finalizado con ${challenger().name} como WINNER!`;
+// }
 
 
 // .innerText() esto se utiliza si queremos renderizar el texto en la vista correspondiente.
