@@ -237,15 +237,48 @@ body{
 /*--------------------------------------------------------------------VISTA 4-----------------------------------------------------------------------------*/
 
 .screen4{
-    background-color:rgb(255, 154, 205);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
     width: 100vw;
     height: 100vh;
+    background-image: url("../img/Final.jpg");
+    background-size: cover;
+
 }
 
 .Final{
-   
-    width: 50%;
-    height: 50%;
+    background-color: transparent;
+    
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.cartel{
+
+    object-fit: cover;
+
+    width: 50vw;
+    height: 50vh;
+}
+.pantalla_final{
+  
+    
+
+    width: 100%;
+    height: 500%;
+    
+}
+.btn_v4{
+    background-color:white;
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */

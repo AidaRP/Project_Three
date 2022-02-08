@@ -27,9 +27,14 @@ let challenger8 = new Character("L", 7750, 66350, 25, 10);
 
 const dañarVida = () => {
   
- 
+  // CASO CHALLENGER 1
   challenger1.health = parseInt(challenger1.health)  - (parseInt(challenger2.attack * Math.random(challenger2.lucky) ));
+  
+  // CASO CHALLENGER 2
   challenger2.health = parseInt(challenger2.health)  - (parseInt(challenger1.attack * Math.random(challenger1.lucky) ));
+  
+  // CASO CHALLENGER 3
+  challenger3.health = parseInt(challenger3.health)  - (parseInt(challenger1.attack * Math.random(challenger1.lucky) ));
 
   
   //Condición que dictamina el ganador/perdedor
@@ -38,32 +43,49 @@ const dañarVida = () => {
     challenger2.status = 'WINNER'
   }
   if (challenger2.health <= 0) {
-    challenger2.status = 'LOSER'
     challenger1.status = 'WINNER'
+    challenger2.status = 'LOSER'
+  }
+  if (challenger3.health <= 0) {
+    challenger1.status = 'WINNER'
+    challenger2.status = 'WINNER'
+    challenger3.status = 'LOSER'
+    challenger4.status = 'WINNER'
+    challenger5.status = 'WINNER'
+    challenger6.status = 'WINNER'
+    challenger7.status = 'WINNER'
+    challenger8.status = 'WINNER'
   }
   //Condición que hace cambiar de la vista 3 a la 4 cuando acaba el combate
 let winner = document.getElementById('infoWin')  
   if (challenger1.status == 'WINNER') {
     changeView(4);
 winner.innerHTML = `Ha ganado challenger1` 
-  }else if (challenger2.status == 'WINNER'){
+  
+}else if (challenger2.status == 'WINNER'){
     changeView(4);
     winner.innerHTML = `Ha ganado challenger2` 
+  
   }else if (challenger3.status == 'WINNER'){
     changeView(4);
     winner.innerHTML = `Ha ganado challenger3` 
+  
   }else if (challenger4.status == 'WINNER'){
     changeView(4);
     winner.innerHTML = `Ha ganado challenger4` 
+  
   }else if (challenger5.status == 'WINNER'){
     changeView(4);
     winner.innerHTML = `Ha ganado challenger5` 
+  
   }else if (challenger6.status == 'WINNER'){
     changeView(4);
     winner.innerHTML = `Ha ganado challenger6` 
+  
   }else if (challenger7.status == 'WINNER'){
     changeView(4);
     winner.innerHTML = `Ha ganado challenger7` 
+  
   }else if (challenger8.status == 'WINNER'){
   changeView(4);
   winner.innerHTML = `Ha ganado challenger8` 
