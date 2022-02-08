@@ -159,21 +159,44 @@ body{
 }
 
 #battle{
-    background-color:red;
+    background-color:rgb(0, 0, 0);
+
+    
 
     position:absolute;
 
-    top: 55em;
-    left: 53em;
+    top: 52em;
+    left: 50em;
 
-    width: 10vw;
+    width: 15vw;
     height: 10vh;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 
  
+}
+
+.combat{
+    color: aliceblue;
+
+    position: absolute;
+    
+    top: -5px;
+    left:50px;
+    
+    font-family: 'Press Start 2P', cursive;
+}
+
+.press{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 100%;
+    
 }
 
 .tatami{
