@@ -99,6 +99,8 @@ body{
     align-items: center;
 
     margin: 10em;
+
+    
     
 }
 .ChangSelected {
@@ -126,17 +128,15 @@ body{
     
 /* -------------------------------------------------------------------PERSONAJES--------------------------------------------------------------------------*/
 
-.Personaje{
-    background-color:red;
 
-    margin: 2em;
-    
-}
 
 .Personaje{
     background-color:rgb(195, 255, 0);
 
-    margin: 2em;
+    width: 100%;
+    height: 100%;
+
+    margin: 1.5em;
 
 }
 

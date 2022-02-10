@@ -19,8 +19,8 @@ let challenger1 = new Character("Zorra", 7000, 350, 50, 10);
 let challenger2 = new Character("Siete", 4650, 3350, 25, 10);
 let challenger3 = new Character("S", 4650, 3350, 25, 10);
 let challenger4 = new Character("A", 5550, 350, 25, 10);
-let challenger5 = new Character("E", 8750, 9350, 25, 10);
-let challenger6 = new Character("F", 9950, 7350, 25, 10);
+let challenger5 = new Character("E", 8750, 1350, 25, 10);
+let challenger6 = new Character("F", 9950, 2350, 25, 10);
 let challenger7 = new Character("I", 3350, 4350, 25, 10);
 let challenger8 = new Character("L", 7750, 66350, 25, 10);
 
@@ -44,17 +44,7 @@ console.log(player2.health);
     player1.status = "WINNER";
     player2.status = "LOSER";
   }
-  if (player3.health <= 0) {
-    player1.status = "WINNER";
-    player2.status = "WINNER";
-    player3.status = "LOSER";
-    player4.status = "WINNER";
-    player5.status = "WINNER";
-    player6.status = "WINNER";
-    player7.status = "WINNER";
-    player8.status = "WINNER";
-  }
-  //Condición que hace cambiar de la vista 3 a la 4 cuando acaba el combate
+//Condición que hace cambiar de la vista 3 a la 4 cuando acaba el combate
   let winner = document.getElementById("infoWin");
   if (player1.status == "WINNER") {
     changeView(4);
