@@ -14,7 +14,9 @@ class Character {
 }
 
 // ---------------------------------------------------------------- INSTANCIAS ---------------------------------------------------------
+
 //Declaro las instancias de los personajes
+
 let challenger1 = new Character("Zorra", 7000, 350, 50, 10);
 let challenger2 = new Character("Siete", 4650, 3350, 25, 10);
 let challenger3 = new Character("S", 4650, 3350, 25, 10);
@@ -25,35 +27,8 @@ let challenger7 = new Character("I", 3350, 4350, 25, 10);
 let challenger8 = new Character("L", 7750, 66350, 25, 10);
 
 
-
-const dañarVida = () => {
-  // Player 1
-    player1.health = parseInt(player1.health) - parseInt(player2.attack * Math.random(player2.lucky));
-    console.log(player1.health)
-  // Player 2
-  player2.health = parseInt(player2.health) - parseInt(player1.attack * Math.random(player1.lucky));
-  console.log(player2.health)
-  //Condición que dictamina el ganador/perdedor
-  if (player1.health <= 0) {
-    player1.status = "LOSER";
-    player2.status = "WINNER";
-  }
-  if (player2.health <= 0) {
-    player1.status = "WINNER";
-    player2.status = "LOSER";
-  }
-//Condición que hace cambiar de la vista 3 a la 4 cuando acaba el combate
-  let winner = document.getElementById("infoWin");
-  if (player1.status == "WINNER") {
-    changeView(4);
-    winner.innerHTML = `Ha ganado player1`;
-  } else if (player2.status == "WINNER") {
-    changeView(4);
-    winner.innerHTML = `Ha ganado player2`;
-  }
-};
-
 //Guardo los personajes en un diccionario
+
 let SaveCharacters = {
   1: challenger1,
   2: challenger2,
@@ -65,5 +40,56 @@ let SaveCharacters = {
   8: challenger8,
 };
 
-battle.addEventListener("onclick", dañarVida());
+
+
+const dañarVida = () => {
+  
+  
+  
+  // Player 1
+  
+  player1.health =
+    parseInt(player1.health) -
+    parseInt(player2.attack * Math.random(player2.lucky));
+  console.log(player1.health);
+  
+  // Player 2
+
+  player2.health =
+    parseInt(player2.health) -
+    parseInt(player1.attack * Math.random(player1.lucky));
+  console.log(player2.health);
+  
+  //Condición que dictamina el ganador/perdedor
+  
+  console.log("soy de fuera");
+
+  if (player1.health <= 0) {
+    console.log("estoy dentro");
+    player1.status = "LOSER";
+    player2.status = "WINNER";
+  }
+ 
+  if (player2.health <= 0) {
+    player1.status = "WINNER";
+    player2.status = "LOSER";
+  }
+  
+  //Condición que hace cambiar de la vista 3 a la 4 cuando acaba el combate
+  
+  let winner = document.getElementById("infoWin");
+  console.log('Soy el 41')
+  if (player1.status == "WINNER") {
+   console.log('estoy entrando en 1');
+    changeView(5);
+    winner.innerHTML = `Ha ganado player1`;
+  } else if (player2.status == "WINNER") {
+    changeView(5);
+   console.log('Hi there')
+    winner.innerHTML = `Ha ganado player2`;
+  }
+};
+
+
+battle.addEventListener("click", dañarVida());
 
