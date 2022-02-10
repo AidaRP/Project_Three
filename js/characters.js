@@ -4,14 +4,13 @@
 const btnBattle = document.getElementById("battle");
 class Character {
   constructor(nick, health, attack, speed, lucky) {
-    this.lucky = lucky;
     this.nick = nick;
     this.health = health;
     this.attack = parseInt(attack);
     this.speed = parseInt(speed);
-    this.status = null
+    this.lucky = lucky;
+    this.status = null;
   }
-
 }
 
 // ---------------------------------------------------------------- INSTANCIAS ---------------------------------------------------------
@@ -26,71 +25,45 @@ let challenger7 = new Character("I", 3350, 4350, 25, 10);
 let challenger8 = new Character("L", 7750, 66350, 25, 10);
 
 const dañarVida = () => {
-  
-  // CASO CHALLENGER 1
-  challenger1.health = parseInt(challenger1.health)  - (parseInt(challenger2.attack * Math.random(challenger2.lucky) ));
-  
-  // CASO CHALLENGER 2
-  challenger2.health = parseInt(challenger2.health)  - (parseInt(challenger1.attack * Math.random(challenger1.lucky) ));
-  
-  // CASO CHALLENGER 3
-  challenger3.health = parseInt(challenger3.health)  - (parseInt(challenger1.attack * Math.random(challenger1.lucky) ));
-
-  
+  // Player 1
+    player1.health =
+    parseInt(player1.health) -
+    parseInt(player2.attack * Math.random(player2.lucky));
+    console.log(player1.health);
+  // Player 2
+  player2.health =
+  parseInt(player2.health) -
+  parseInt(player1.attack * Math.random(player1.lucky));
+console.log(player2.health);
   //Condición que dictamina el ganador/perdedor
-  if (challenger1.health <= 0) {
-    challenger1.status = 'LOSER'
-    challenger2.status = 'WINNER'
+  if (player1.health <= 0) {
+    player1.status = "LOSER";
+    player2.status = "WINNER";
   }
-  if (challenger2.health <= 0) {
-    challenger1.status = 'WINNER'
-    challenger2.status = 'LOSER'
+  if (player2.health <= 0) {
+    player1.status = "WINNER";
+    player2.status = "LOSER";
   }
-  if (challenger3.health <= 0) {
-    challenger1.status = 'WINNER'
-    challenger2.status = 'WINNER'
-    challenger3.status = 'LOSER'
-    challenger4.status = 'WINNER'
-    challenger5.status = 'WINNER'
-    challenger6.status = 'WINNER'
-    challenger7.status = 'WINNER'
-    challenger8.status = 'WINNER'
+  if (player3.health <= 0) {
+    player1.status = "WINNER";
+    player2.status = "WINNER";
+    player3.status = "LOSER";
+    player4.status = "WINNER";
+    player5.status = "WINNER";
+    player6.status = "WINNER";
+    player7.status = "WINNER";
+    player8.status = "WINNER";
   }
   //Condición que hace cambiar de la vista 3 a la 4 cuando acaba el combate
-let winner = document.getElementById('infoWin')  
-  if (challenger1.status == 'WINNER') {
+  let winner = document.getElementById("infoWin");
+  if (player1.status == "WINNER") {
     changeView(4);
-winner.innerHTML = `Ha ganado challenger1` 
-  
-}else if (challenger2.status == 'WINNER'){
+    winner.innerHTML = `Ha ganado player1`;
+  } else if (player2.status == "WINNER") {
     changeView(4);
-    winner.innerHTML = `Ha ganado challenger2` 
-  
-  }else if (challenger3.status == 'WINNER'){
-    changeView(4);
-    winner.innerHTML = `Ha ganado challenger3` 
-  
-  }else if (challenger4.status == 'WINNER'){
-    changeView(4);
-    winner.innerHTML = `Ha ganado challenger4` 
-  
-  }else if (challenger5.status == 'WINNER'){
-    changeView(4);
-    winner.innerHTML = `Ha ganado challenger5` 
-  
-  }else if (challenger6.status == 'WINNER'){
-    changeView(4);
-    winner.innerHTML = `Ha ganado challenger6` 
-  
-  }else if (challenger7.status == 'WINNER'){
-    changeView(4);
-    winner.innerHTML = `Ha ganado challenger7` 
-  
-  }else if (challenger8.status == 'WINNER'){
-  changeView(4);
-  winner.innerHTML = `Ha ganado challenger8` 
+    winner.innerHTML = `Ha ganado player2`;
+  }
 };
-}
 
 //Guardo los personajes en un diccionario
 let SaveCharacters = {
@@ -102,8 +75,6 @@ let SaveCharacters = {
   6: challenger6,
   7: challenger7,
   8: challenger8,
-  
 };
 
-
-btnBattle.addEventListener("onclick",dañarVida());
+btnBattle.addEventListener("onclick", dañarVida());
