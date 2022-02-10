@@ -8,9 +8,6 @@
     <title>Videojuego JS</title>
   </head>
   <body>
-    
-    
-    
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- VISTA 1 INICIO -->
     <section id="view1" class="screen1">
@@ -28,106 +25,93 @@
         </button>
       </div>
     </section>
-    
-    
-    
+
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- VIDEO -->
+    <section id="view2" style="display: none">
+      <img src="img/gif_dragon.gif" alt="" />
+    </section>
+
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- VISTA 2 SELECCIÓN -->
-    <section id="view2" class="screen2" style="display: none">
+    <section id="view3" class="screen2" style="display: none">
       <!-- BOTON 2 QUE HACE CAMBIAR LA PANTALLA -->
-     
 
       <div class="Div_Selection">
+       
         <div class="center">
-          <div class="Position_Selection">
-            Selecciona un Personaje:
+          <div class="selec_pj">
+          ¡Selecciona tú personaje!
+          </div>
 
-            <div class="Personajes">
-              
-              
+            <div class="Personajes1">
               <div class="Personaje" id="1" onclick="selectionCharacter(1)">
                 Soy PJ 1
               </div>
-              
-              
+
               <div class="Personaje" id="2" onclick="selectionCharacter(2)">
                 Soy PJ 2
               </div>
-              
-              
+
               <div class="Personaje" id="3" onclick="selectionCharacter(3)">
                 Soy PJ 3
               </div>
-              
-              
+
               <div class="Personaje" id="4" onclick="selectionCharacter(4)">
                 Soy PJ 4
               </div>
-              
-              
+            </div>
+
+              <div class="Personajes2">
               <div class="Personaje" id="5" onclick="selectionCharacter(5)">
                 Soy PJ 5
               </div>
-              
-              
+
               <div class="Personaje" id="6" onclick="selectionCharacter(6)">
                 Soy PJ 6
               </div>
-              
-              
+
               <div class="Personaje" id="7" onclick="selectionCharacter(7)">
                 Soy PJ 7
               </div>
-              
-              
+
               <div class="Personaje" id="8" onclick="selectionCharacter(8)">
                 Soy PJ 8
               </div>
-           
-           
             </div>
-          </div>
+         
         </div>
       </div>
     </section>
 
-    
-    
-    
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- VISTA 3 BATALLA -->
-    <section id="view3" class="screen3" style="display: none">
+    <section id="view4" class="screen3" style="display: none">
       <!-- DIV CON FUNCIÓN DE BOTÓN QUE HACE QUE LOS LUCHADORES SE REVIENTEN -->
       <div class="tatami">
         <div class="fondo">
-          
           <img class="tatami_fondo" src="img/Fondo_Cell.jpg" alt="" />
           <div id="battle" onclick="dañarVida()">
-            <div class="combat">Iniciar <p>combate</p>  </div>
-          <div ><img class="press" src="img/Blue_Balls.jpg" alt=""></div>
+            <div class="combat">
+              Iniciar
+              <p>combate</p>
+            </div>
+            <div><img class="press" src="img/Blue_Balls.jpg" alt="" /></div>
           </div>
-
         </div>
       </div>
     </section>
-    
-    
-    
+
     <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- VISTA 4 FINAL-->
-    <section id="view4" class="screen4" style="display: none">
+    <section id="view5" class="screen4" style="display: none">
       <!-- BOTON 4 QUE HACE CAMBIAR LA PANTALLA -->
       <div class="Final">
-        <div class="cartel">
-          
-        </div>
-          
-        <div class="btn_v4"
-          onClick="changeView(1)"
-          id="btnSeleccion">
+        <div class="cartel"></div>
+
+        <div class="btn_v4" onClick="changeView(1)" id="btnSeleccion">
           TRY AGAIN
         </div>
-        
 
         <div id="infoWin"></div>
       </div>

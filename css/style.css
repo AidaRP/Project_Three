@@ -41,7 +41,7 @@ body{
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 
-
+/* VIDEO */
 
 
 
@@ -68,10 +68,14 @@ body{
 .center{
     background-color:yellow;
 
-    width: 100vw;
+    width: 90vw;
+    height: 90vh;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    margin: 0px 0px 0px 0;
 }
 
 /* ---------------------------------------------------------------POSICIÓN SELECCIÓN---------------------------------------------------------------------*/
@@ -79,35 +83,21 @@ body{
 .Div_Selection{
     background-color:blueviolet;
 
-    width: 100%;
-    height: 90%;
+    width: 100vw;
+    height: 90vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
     
+
     
 
 }
 
 /* -------------------------------------------------------------------SELECCIÓN---------------------------------------------------------------------------*/
 
-.Position_Selection{
 
-    /* background-color: aqua; */
-
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 10em;
-
-    
-    
-}
 .ChangSelected {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -115,24 +105,40 @@ body{
 
 /* -------------------------------------------------------------------POSICIÓN PERSONAJES-----------------------------------------------------------------*/
 
-.Personajes{
-    /* background-color:green; */
+.Personajes1{
+    background-color:rgb(255, 2, 213);
     
-    width:20vw;
-    height:20vh;
+    width:30vw;
+    height:60vh;
     
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
-    margin: -7em;
-    margin-top:10em;
-    margin-left: -17em;
+    
+
+}
+.Personajes2{
+    background-color:green;
+    
+    width:30vw;
+    height:60vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 
 }
     
 /* -------------------------------------------------------------------PERSONAJES--------------------------------------------------------------------------*/
+.selec_pj{
+    position: absolute;
 
+    top: 80px;
+}
 
 
 .Personaje{
@@ -141,6 +147,10 @@ body{
     width: 100%;
     height: 100%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     margin: 1.5em;
 
 }

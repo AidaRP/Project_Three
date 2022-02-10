@@ -3,7 +3,7 @@
 const changeView = (vw_0) => {
   let fasewant = "view" + vw_0;
 
-  let arrFases = ["view1", "view2", "view3", "view4"];
+  let arrFases = ["view1", "view2", "view3", "view4", "view5"];
 
   arrFases = arrFases.filter((val) => !fasewant.includes(val));
 
@@ -14,10 +14,18 @@ const changeView = (vw_0) => {
   }
 };
 
+//Cambio de pantalla del gif a la pantalla 2 de selección
+console.log("estoy fuera")
+  setTimeout(() => {
+    console.log("estoy en el time");
+    changeView(3);
+  }, 600);
+
+
+
 // Arrays para guardar los personajes y que pasen de la vista 2 a la 3.
 let player1 = [];
 let player2 = [];
-
 
 const selectionCharacter = (numLuchadores) => {
 
@@ -41,14 +49,14 @@ const selectionCharacter = (numLuchadores) => {
       //Seleccionados los 2 personajes se ejecuta la funcion de cambio de pantalla en los milisegundos establecidos
 
       setTimeout(() => {
-          changeView(3);
+          changeView(4);
       }, 800);
   }
 
 }
+
+
 // const final = () => {
-//   innerText = `El combate ha finalizado con ${challenger().name} como WINNER!`;
+//  
 // }
 
-
-// .innerText() esto se utiliza si queremos renderizar el texto en la vista correspondiente.

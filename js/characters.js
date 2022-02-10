@@ -24,17 +24,15 @@ let challenger6 = new Character("F", 9950, 2350, 25, 10);
 let challenger7 = new Character("I", 3350, 4350, 25, 10);
 let challenger8 = new Character("L", 7750, 66350, 25, 10);
 
+
+
 const dañarVida = () => {
   // Player 1
-    player1.health =
-    parseInt(player1.health) -
-    parseInt(player2.attack * Math.random(player2.lucky));
-    console.log(player1.health);
+    player1.health = parseInt(player1.health) - parseInt(player2.attack * Math.random(player2.lucky));
+    console.log(player1.health)
   // Player 2
-  player2.health =
-  parseInt(player2.health) -
-  parseInt(player1.attack * Math.random(player1.lucky));
-console.log(player2.health);
+  player2.health = parseInt(player2.health) - parseInt(player1.attack * Math.random(player1.lucky));
+  console.log(player2.health)
   //Condición que dictamina el ganador/perdedor
   if (player1.health <= 0) {
     player1.status = "LOSER";
@@ -67,4 +65,5 @@ let SaveCharacters = {
   8: challenger8,
 };
 
-btnBattle.addEventListener("onclick", dañarVida());
+battle.addEventListener("onclick", dañarVida());
+
