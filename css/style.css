@@ -63,6 +63,16 @@ body{
     
    
 }
+.title_pos{
+   width: 60vw;
+   padding-bottom:5em;
+
+   justify-content: flex-start;
+   align-items: flex-start;
+
+   
+   
+}
 /* -----------------------------------------------------------CENTRO POSICIÓN SELECCIÓN----------------------------------------------------------------- */
 
 .center{
@@ -115,6 +125,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 
     
 
@@ -137,7 +148,8 @@ body{
 .selec_pj{
     position: absolute;
 
-    top: 80px;
+    top: -25px;
+
 }
 
 
