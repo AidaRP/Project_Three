@@ -23,7 +23,7 @@ let challenger3 = new Character("Celula", 7000, 999, 25, 10);
 let challenger4 = new Character("Jiren", 7000, 300, 25, 10);
 let challenger5 = new Character("Bills", 7000, 1050, 25, 10);
 let challenger6 = new Character("Veggeto", 7000, 350, 25, 10);
-let challenger7 = new Character("Androide", 7000, 650, 25, 10);
+let challenger7 = new Character("c18", 7000, 650, 25, 10);
 let challenger8 = new Character("Bardock", 7000, 750, 25, 10);
 
 
@@ -91,6 +91,10 @@ const dañarVida = () => {
   }
 };
 
+const viewSprites = () =>{
+            document.getElementById("sprite1").src = "" + player1.nick + ".png";
+            document.getElementById("sprite2").src = "img/" + player2.nick + ".png";
+}
 
 battle.addEventListener("click", dañarVida());
 

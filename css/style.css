@@ -325,7 +325,7 @@ body{
     width:150em;
     height: 59em;
 
-    object-fit: contain;
+    
 
     display: flex;
     justify-content: center;
@@ -334,7 +334,24 @@ body{
     
     
 }
+.spriteDer{
+    background-color: aliceblue;
 
+    position: absolute;
+    left: 5em;
+    top: 45em;
+}
+.spriteIzq{
+    background-color: rgb(255, 0, 191);
+
+    position: absolute;
+    left: 110em;
+    top: 45em;
+}
+.seleccionCharacter{
+    width: 20%;
+    height:20%;
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
