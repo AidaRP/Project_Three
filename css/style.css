@@ -173,7 +173,7 @@ body{
 .Freezer{
     background-image: url(../img/Freezer.jpg);
     
-    color: aqua;
+    color:rgb(255, 0, 200) ;
     
     display: flex;
     justify-content: flex-end;
@@ -182,26 +182,67 @@ body{
 
 .Brooly{
     background: url(../img/Brooly_B.jpg) no-repeat center;
+
+    color:rgb(255, 0, 200) ;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     
 
 }.Celula{
     background: url(../img/Splash_Cell.jpg) no-repeat center;
 
+    color:rgb(255, 0, 200) ;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }.Jiren{
     background-image: url(../img/Jiren_B.jpg);
 
+    color:rgb(255, 0, 200) ;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }.Bills{
     background: url(../img/Bills_B.jpg) no-repeat center;
 
+    color:rgb(255, 0, 200) ;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }.Veggeto{
     background: url(../img/Veggeto_B.jpg) no-repeat center;
+
+    color:rgb(255, 0, 200) ;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
    
 
 }.Androide{
     background: url(../img/ANdroid18_B.jpg) no-repeat center;
 
+    color:rgb(255, 0, 200) ;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
 }.Bardock{
     background: url(../img/Bardock_B.jpg) no-repeat center;
+
+    color:rgb(255, 0, 200) ;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
@@ -358,5 +399,9 @@ body{
 
     top: 40em;
     left: 45em;
+}
+
+#Win2{
+background-color: red;
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */

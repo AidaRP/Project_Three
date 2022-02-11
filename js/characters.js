@@ -77,16 +77,17 @@ const dañarVida = () => {
   
   //Condición que hace cambiar de la vista 3 a la 4 cuando acaba el combate
   
-  let winner = document.getElementById("infoWin");
+  let winner1 = document.getElementById("infoWin1");
+  let winner2 = document.getElementById("infoWin2");
  
   if (player1.status == "WINNER") {
   
     changeView(5);
-    winner.innerHTML = `Ha ganado player1`;
+    winner1.innerHTML = `Ha ganado player1`;
   } else if (player2.status == "WINNER") {
     changeView(5);
    
-    winner.innerHTML = `Ha ganado player2`;
+    winner2.innerHTML = `Ha ganado player2`;
   }
 };
 
