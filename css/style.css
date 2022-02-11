@@ -118,7 +118,7 @@ body{
 /* -------------------------------------------------------------------POSICIÓN PERSONAJES-----------------------------------------------------------------*/
 
 .Personajes1{
-    background-color:rgb(255, 2, 213);
+    /* background-color:rgb(255, 2, 213); */
     
     width:30vw;
     height:60vh;
@@ -128,12 +128,13 @@ body{
     align-items: center;
     flex-direction: column;
     
+    padding: 2em;
 
     
 
 }
 .Personajes2{
-    background-color:green;
+    /* background-color:green; */
     
     width:30vw;
     height:60vh;
@@ -142,6 +143,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    padding: 2em;
     
 
 }
@@ -164,13 +167,34 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    margin: 1.5em;
-
 }
 
+.Freezer{
+    background-image: url(../img/Freezer.jpg);
+}
 
+.Brooly{
+    background-image: url(../img/Brooly.jpg);
+    
 
+}.Celula{
+    background-image: url(../img/Splash_Cell.jpg);
+
+}.Jiren{
+    background-image: url(../img/Jiren.jpg);
+
+}.Freezer{
+    background-image: url(../img/Freezer.jpg);
+
+}.Freezer{
+    background-image: url(../img/Freezer.jpg);
+
+}.Freezer{
+    background-image: url(../img/Freezer.jpg);
+
+}.Freezer{
+    background-image: url(../img/Freezer.jpg);
+}
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 
