@@ -2,7 +2,7 @@
 // Función de cambio de Vista
 const changeView = (vw_0) => {
   let fasewant = "view" + vw_0;
-console.log(vw_0)
+
   let arrFases = ["view1", "view2", "view3", "view4", "view5"];
 
   arrFases = arrFases.filter((val) => !fasewant.includes(val));
@@ -14,12 +14,14 @@ console.log(vw_0)
   }
 };
 
-//Cambio de pantalla del gif a la pantalla 2 de selección
-console.log("estoy fuera")
-setTimeout(() => {
-  console.log("estoy en el time");
-  changeView(3);
-}, 600);
+// //Cambio de pantalla del gif a la pantalla 2 de selección
+// if (fasewant == "view2") {
+  
+//   setTimeout(() => {
+//     console.log("estoy en el time");
+//     changeView(3);
+//   }, 600);
+// }
 
 
 
@@ -56,8 +58,11 @@ const selectionCharacter = (numLuchadores) => {
 
 }
 
-// battle.addEventListener("onclick", dañarVida());
 
-// const final = () => {
-//  
-// }
+//Función que nos hace reiniciar el juego
+const final = () => {
+ document.getElementById("btnFinal");
+  window.location.reload();
+
+
+}
