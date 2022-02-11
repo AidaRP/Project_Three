@@ -17,14 +17,14 @@ class Character {
 
 //Declaro las instancias de los personajes
 
-let challenger1 = new Character("Zorra", 7000, 350, 50, 10);
-let challenger2 = new Character("Siete", 4650, 3350, 25, 10);
-let challenger3 = new Character("S", 4650, 3350, 25, 10);
-let challenger4 = new Character("A", 5550, 350, 25, 10);
-let challenger5 = new Character("E", 8750, 1350, 25, 10);
-let challenger6 = new Character("F", 9950, 2350, 25, 10);
-let challenger7 = new Character("I", 3350, 4350, 25, 10);
-let challenger8 = new Character("L", 7750, 66350, 25, 10);
+let challenger1 = new Character("Freezer", 7000, 350, 50, 10);
+let challenger2 = new Character("Brooly", 7000, 350, 25, 10);
+let challenger3 = new Character("Celula", 7000, 999, 25, 10);
+let challenger4 = new Character("Jiren", 7000, 300, 25, 10);
+let challenger5 = new Character("Bills", 7000, 1050, 25, 10);
+let challenger6 = new Character("Veggeto", 7000, 350, 25, 10);
+let challenger7 = new Character("Androide", 7000, 650, 25, 10);
+let challenger8 = new Character("Bardock", 7000, 750, 25, 10);
 
 
 //Guardo los personajes en un diccionario

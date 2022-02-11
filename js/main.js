@@ -26,8 +26,8 @@ const changeView = (vw_0) => {
 
 
 // Arrays para guardar los personajes y que pasen de la vista 2 a la 3.
-  var player1 = [];
-  var player2 = [];
+  let player1 = [];
+  let player2 = [];
 
 const selectionCharacter = (numLuchadores) => {
 
