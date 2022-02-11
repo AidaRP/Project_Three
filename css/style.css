@@ -167,33 +167,41 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .Freezer{
     background-image: url(../img/Freezer.jpg);
+    
+    color: aqua;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .Brooly{
-    background-image: url(../img/Brooly.jpg);
+    background: url(../img/Brooly_B.jpg) no-repeat center;
     
 
 }.Celula{
-    background-image: url(../img/Splash_Cell.jpg);
+    background: url(../img/Splash_Cell.jpg) no-repeat center;
 
 }.Jiren{
-    background-image: url(../img/Jiren.jpg);
+    background-image: url(../img/Jiren_B.jpg);
 
-}.Freezer{
-    background-image: url(../img/Freezer.jpg);
+}.Bills{
+    background: url(../img/Bills_B.jpg) no-repeat center;
 
-}.Freezer{
-    background-image: url(../img/Freezer.jpg);
+}.Veggeto{
+    background: url(../img/Veggeto_B.jpg) no-repeat center;
+   
 
-}.Freezer{
-    background-image: url(../img/Freezer.jpg);
+}.Androide{
+    background: url(../img/ANdroid18_B.jpg) no-repeat center;
 
-}.Freezer{
-    background-image: url(../img/Freezer.jpg);
+}.Bardock{
+    background: url(../img/Bardock_B.jpg) no-repeat center;
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
