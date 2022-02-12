@@ -334,23 +334,27 @@ body{
     
     
 }
-.spriteDer{
-    background-color: aliceblue;
+.spriteDer, .spriteIzq{
 
     width:7%;
     height:20%;
 
     position: absolute;
+
+    background-position: center;
+    background-size: cover;
+
+
+}
+.spriteDer{
+   
+
     left: 36em;
     top: 35em;
 }
 .spriteIzq{
-    background-color: rgb(255, 0, 191);
+    
 
-    width:7%;
-    height:20%;
-
-    position: absolute;
     left: 80em;
     top: 35em;
 }

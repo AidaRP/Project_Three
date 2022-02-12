@@ -3,13 +3,14 @@
 //-------------------------------------------- APARTADO PARA LA CLASE Y SUS INSTANCIAS ---------------------------------------------------------
 const btnBattle = document.getElementById("battle");
 class Character {
-  constructor(nick, health, attack, speed, lucky) {
+  constructor(nick, health, attack, speed, lucky, sprite) {
     this.nick = nick;
     this.health = health;
     this.attack = parseInt(attack);
     this.speed = parseInt(speed);
     this.lucky = lucky;
     this.status = null;
+    this.sprite = sprite;
   }
 }
 
@@ -17,14 +18,14 @@ class Character {
 
 //Declaro las instancias de los personajes
 
-let challenger1 = new Character("Freezer", 7000, 350, 50, 10);
-let challenger2 = new Character("Brooly", 7000, 350, 25, 10);
-let challenger3 = new Character("Celula", 7000, 999, 25, 10);
-let challenger4 = new Character("Jiren", 7000, 300, 25, 10);
-let challenger5 = new Character("Bills", 7000, 1050, 25, 10);
-let challenger6 = new Character("Veggeto", 7000, 350, 25, 10);
-let challenger7 = new Character("c18", 7000, 650, 25, 10);
-let challenger8 = new Character("Bardock", 7000, 750, 25, 10);
+let challenger1 = new Character("Freezer", 7000, 350, 50, 10, "img/Freezer.png");
+let challenger2 = new Character("Brooly", 7000, 350, 25, 10, "img/Brooly.png");
+let challenger3 = new Character("Celula", 7000, 999, 25, 10, "img/Cell.png");
+let challenger4 = new Character("Jiren", 7000, 300, 25, 10, "img/Jiren.png");
+let challenger5 = new Character("Bills", 7000, 1050, 25, 10, "img/Bills.png");
+let challenger6 = new Character("Veggeto", 7000, 350, 25, 10, "img/Vegetto.png");
+let challenger7 = new Character("c18", 7000, 650, 25, 10, "img/C18.png");
+let challenger8 = new Character("Bardock", 7000, 750, 25, 10, "img/Bardock.png");
 
 
 //Guardo los personajes en un diccionario
@@ -97,3 +98,4 @@ const viewSprites = () => {
 }
 
 battle.addEventListener("click", dañarVida());
+

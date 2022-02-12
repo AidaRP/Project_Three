@@ -29,6 +29,19 @@ const changeView = (vw_0) => {
 let player1 = [];
 let player2 = [];
 
+
+//Hacer que salga el sprite seleccionado por los jugadores 
+const spriteSelecc = () => {
+  let sprite1 = document.getElementById("sprite1")
+  let sprite2 = document.getElementById("sprite2")
+
+console.log(player1.sprite, "Hola whats happening 1");
+console.log(player2.sprite,"Hola whats happening 2");
+
+  sprite1.style.backgroundImage = `url(${player1.sprite})`
+  sprite2.style.backgroundImage = `url(${player2.sprite})`
+}
+
 const selectionCharacter = (numLuchadores) => {
 
   if (player1 == "") {
@@ -51,6 +64,8 @@ const selectionCharacter = (numLuchadores) => {
     //Seleccionados los 2 personajes se ejecuta la funcion de cambio de pantalla en los milisegundos establecidos
 
     setTimeout(() => {
+
+      spriteSelecc()
       changeView(4)
     }, 800);
 
