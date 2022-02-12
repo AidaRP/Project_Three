@@ -7,13 +7,14 @@ const changeView = (vw_0) => {
 
   arrFases = arrFases.filter((val) => !fasewant.includes(val));
 
-  document.getElementById(fasewant).style.display = "block";
+  document.getElementById(fasewant).style.display = "flex";
 
   for (let _f of arrFases) {
     document.getElementById(_f).style.display = "none";
   }
 };
 
+// Función para mostrar el GIF de la vista 2
 const showGif = () => {
   changeView(2)
   setTimeout(() =>{changeView(3)},5450)
@@ -38,6 +39,8 @@ console.log(player2.sprite,"Hola whats happening 2");
   sprite2.style.backgroundImage = `url(${player2.sprite})`
 }
 
+
+//función de selección de personajes
 const selectionCharacter = (numLuchadores) => {
 
   if (player1 == "") {

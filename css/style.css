@@ -13,26 +13,67 @@ body{
 .screen1{
     background-color: rgb(84, 83, 170);
 
+    background-image: url(../img/Vista_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     width: 100vw;
     height: 100vh;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center ;
+    align-items: flex-end ;
 }
 
-.btn1{
+#btnSeleccion, .btn_v4{
 
     width: 30em;
     height: 8em;
 
-    border-radius: 25%;
+    border-radius: 15em;
 
-    position: absolute;
 
     top:60em;
     left: 53em;
+
+    margin-bottom: 5em;
+    padding: 0;
+
+    overflow: visible;
+
+    border: .5em solid black;
+
+    color: inherit;
+    font: inherit;
+
+    line-height: normal;
+
+    text-align: inherit;
+
+    outline: none;
+
+    
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(224, 127, 0);
+
 }
+#btnSeleccion:hover, .btn_v4:hover{
+    transform:scale(.95);
+
+    background-color: rgb(200, 123, 21);
+}
+#btnSeleccion{
+
+    background-image: url(../img/start.png);
+}
+.btn_v4{
+    
+    background-image: url(../img/tryagain.png);
+}
+
 
 .fondo_1{
     width: 100vw;
@@ -310,7 +351,7 @@ body{
 
     object-fit: cover;
 
-    border-radius: 30%;
+    border-radius: 5em 5em 0 0;
     
 }
 
@@ -379,66 +420,24 @@ body{
 /*--------------------------------------------------------------------VISTA 5-----------------------------------------------------------------------------*/
 
 .screen4{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     width: 100vw;
     height: 100vh;
+
     background-image: url("../img/Final.jpg");
     background-size: cover;
-
+    background-position: center;
 }
 
-.Final{
-    background-color: transparent;
-    
-    width: 100vw;
-    height: 100vh;
+#infoWin{
+    color: white;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
 
-    
-}
-.cartel{
-
-    object-fit: cover;
-
-    width: 50vw;
-    height: 50vh;
-}
-.pantalla_final{
-  
-    background-color:white;
-
-    width: 100%;
-    height: 500%;
-    
-}
-.btn_v4{
-    background-color:white;
-    
-    width: 30em;
-    height: 8em;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 25%;
-
-    position: absolute;
-
-    top: 40em;
-    left: 45em;
-}
-
-#Win2{
-background-color: red;
+    font-size: xxx-large;
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
