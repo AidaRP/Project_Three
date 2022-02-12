@@ -226,7 +226,7 @@ body{
     align-items: flex-end;
    
 
-}.Androide{
+}.C18{
     background: url(../img/ANdroid18_B.jpg) no-repeat center;
 
     color:rgb(255, 0, 200) ;
@@ -337,16 +337,22 @@ body{
 .spriteDer{
     background-color: aliceblue;
 
+    width:7%;
+    height:20%;
+
     position: absolute;
-    left: 5em;
-    top: 45em;
+    left: 36em;
+    top: 35em;
 }
 .spriteIzq{
     background-color: rgb(255, 0, 191);
 
+    width:7%;
+    height:20%;
+
     position: absolute;
-    left: 110em;
-    top: 45em;
+    left: 80em;
+    top: 35em;
 }
 .seleccionCharacter{
     width: 20%;

@@ -16,7 +16,7 @@ const changeView = (vw_0) => {
 
 // //Cambio de pantalla del gif a la pantalla 2 de selección
 // if (fasewant == "view2") {
-  
+
 //   setTimeout(() => {
 //     console.log("estoy en el time");
 //     changeView(3);
@@ -26,8 +26,8 @@ const changeView = (vw_0) => {
 
 
 // Arrays para guardar los personajes y que pasen de la vista 2 a la 3.
-  let player1 = [];
-  let player2 = [];
+let player1 = [];
+let player2 = [];
 
 const selectionCharacter = (numLuchadores) => {
 
@@ -53,7 +53,7 @@ const selectionCharacter = (numLuchadores) => {
     setTimeout(() => {
       changeView(4)
     }, 800);
-    
+
   }
 
 }
@@ -61,7 +61,7 @@ const selectionCharacter = (numLuchadores) => {
 
 //Función que nos hace reiniciar el juego
 const final = () => {
- document.getElementById("btnFinal");
+  document.getElementById("btnFinal");
   window.location.reload();
 
 
