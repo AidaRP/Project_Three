@@ -14,14 +14,10 @@ const changeView = (vw_0) => {
   }
 };
 
-// //Cambio de pantalla del gif a la pantalla 2 de selección
-// if (fasewant == "view2") {
-
-//   setTimeout(() => {
-//     console.log("estoy en el time");
-//     changeView(3);
-//   }, 600);
-// }
+const showGif = () => {
+  changeView(2)
+  setTimeout(() =>{changeView(3)},5450)
+}
 
 
 
