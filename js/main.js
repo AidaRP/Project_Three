@@ -32,8 +32,7 @@ const spriteSelecc = () => {
   let sprite1 = document.getElementById("sprite1")
   let sprite2 = document.getElementById("sprite2")
 
-console.log(player1.sprite, "Hola whats happening 1");
-console.log(player2.sprite,"Hola whats happening 2");
+
 
   sprite1.style.backgroundImage = `url(${player1.sprite})`
   sprite2.style.backgroundImage = `url(${player2.sprite})`
@@ -48,7 +47,7 @@ const selectionCharacter = (numLuchadores) => {
     let luchador1 = document.getElementById(numLuchadores)
     luchador1.onclick = "";
     luchador1.classList.add("ChangSelected");
-    console.log(player1)
+   
     //Escogemos personaje y lo bloqueamos a la vez que le dejamos el color gris para seleccionarlo.
 
 
@@ -58,7 +57,7 @@ const selectionCharacter = (numLuchadores) => {
     let luchador2 = document.getElementById(numLuchadores)
     luchador2.onclick = "";
     luchador2.classList.add("ChangSelected");
-    console.log(player2)
+    
 
     //Seleccionados los 2 personajes se ejecuta la funcion de cambio de pantalla en los milisegundos establecidos
 

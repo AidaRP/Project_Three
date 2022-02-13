@@ -52,21 +52,25 @@ const dañarVida = () => {
   player1.health =
     parseInt(player1.health) -
     parseInt(player2.attack * Math.random(player2.lucky));
-  console.log(player1.health);
-
+  
+  //Barra de vida 1
+  let porcentajeVida1 = player1.health * 100 / 7000;
+  document.getElementById("healthScore1").style.width = porcentajeVida1+'%';
   // Player 2
 
   player2.health =
     parseInt(player2.health) -
     parseInt(player1.attack * Math.random(player1.lucky));
-  console.log(player2.health);
-
+  
+  //Barra de vida 2
+  let porcentajeVida2 = player2.health * 100 / 7000;
+  document.getElementById("healthScore2").style.width = porcentajeVida2+'%';
   //Condición que dictamina el ganador/perdedor
 
-  console.log("soy de fuera");
+  
 
   if (player1.health <= 0) {
-    console.log("estoy dentro");
+    
     player1.status = "LOSER";
     player2.status = "WINNER";
   }
@@ -75,23 +79,32 @@ const dañarVida = () => {
     player1.status = "WINNER";
     player2.status = "LOSER";
   }
+  
+  
+  
+  
+  
+  
+  
 
   //Condición que hace cambiar de la vista 3 a la 4 cuando acaba el combate
 
   let winner = document.getElementById("infoWin");
- 
+
 
   if (player1.status == "WINNER") {
 
     changeView(5);
     winner.innerHTML = `Ha ganado player1`;
-    
+
   } else if (player2.status == "WINNER") {
     changeView(5);
 
     winner.innerHTML = `Ha ganado player2`;
-    
+
   }
+
+
 };
 
 const viewSprites = () => {

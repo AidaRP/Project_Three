@@ -413,6 +413,26 @@ body{
     height:20%;
 }
 
+.healthScore{
+    display: flex;
+
+    height: 1em;    
+    border-radius: .5em;
+    width: 7em;
+    border: .2em solid rgb(0, 0, 0);
+    background-color: black;
+}
+
+#healthScore1, #healthScore2 {
+    display: flex;
+    position: relative;
+
+    background: greenyellow;
+    height: 1em;
+    width: 7em;
+    transition: width 0.6s;
+}
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 
