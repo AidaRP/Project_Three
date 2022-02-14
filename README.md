@@ -1,6 +1,6 @@
 <!-- <p align="center">   </p>  -->
 
-<p style="text-align: center;"> <strong>PROJECT THREE</strong> <p>
+<p style="text-align: center;"> <strong>PROYECTO NÚMERO 3️⃣ </strong> <p>
 
 
 
@@ -10,7 +10,7 @@
 
 ### PANTALLA DE INICIO:
 ![Pantalla inicio](/img/PortadaRDME.jpg)
-##3 PANTALLA DE ANIMACIÓN:
+### PANTALLA DE ANIMACIÓN:
 ![Pantalla animación](/img/Pantalla_AnimciónREADME.jpg)
 ### PANTALLA DE SELECCIÓN:
 ![Pantalla selección de personaje](/img/SeleccionPersonajeReadme.jpg)
